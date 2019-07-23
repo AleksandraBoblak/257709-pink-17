@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
@@ -14,16 +15,16 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+            <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="competition.html">Конкурс</a>
+            <a class="site-list__link" href="competition.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -31,7 +32,9 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">Приложение «Пинк»</h1>
+    <div class="page-title page-title--main">
+      <h1 class="visually-hidden">Приложение «Пинк»</h1>
+    </div>
     <section class="download">
       <h2 class="visually-hidden">Скачать приложение</h2>
       <a class="download__button" href="https://www.apple.com/itunes/">Скачать приложение</a>
@@ -46,12 +49,14 @@
           <a class="download__link download__link--microsoft-store" href="https://www.microsoft.com/en-us/store/apps/windows">Microsoft Store</a>
         </li>
       </ul>
-      <p class="download-description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+      <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
-      <p class="advantages__slogan">Устали от серости мегаполиса?</p>
-      <p class="advantages__slogan">Нам есть, что вам  предложить!</p>
+      <div class="advantages__slogan">
+        <p>Устали от серости мегаполиса?</p>
+        <p>Нам есть, что вам  предложить!</p>
+      </div>
       <ul class="advantages__list">
         <li class="advantages__item">
           <h3 class="advantages__title">Поднимает настроение</h3>
