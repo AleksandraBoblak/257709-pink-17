@@ -2,4 +2,27 @@
   background-color: #283645;
   color: #ffffff;
   padding: 20px 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    padding: 20px;
+  }
+
+  .page-header__logo {
+    height: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    flex-direction: row;
+  }
+
+  .page-header__logo {
+    min-width: 250px;
+  }
 }
