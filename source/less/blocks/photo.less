@@ -1,4 +1,4 @@
-.photo {
+.photo:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -10,7 +10,7 @@
 
 .photo__timeframe {
   text-transform: uppercase;
-
+  font-size: 12px;
   font-weight: 300;
 }
 
@@ -23,6 +23,11 @@
 .photo__information {
   padding: 25px 20px;
   background-color: #f2f2f2;
+  margin: 0 10px 10px 10px;
+}
+
+.photo__information--panorama {
+  margin: 0 20px 10px 20px;
 }
 
 .photo__day-image {
@@ -39,4 +44,54 @@
   padding: 6px 20px;
   background-color: #d22856;
   max-width: 140px;
+}
+
+@media (min-width: @tablet-width) {
+  .photo__information--panorama {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .photo:not(.photo--panorama) {
+    width: 300px;
+    flex-grow: 1;
+  }
+
+  .photo__information--panorama {
+    min-width: 620px;
+    box-sizing: border-box;
+  }
+
+  .photo__link {
+    /*Временно*/
+    display: block;
+    height: 300px;
+  }
+
+  .photo--panorama .photo__link {
+    /*Временно*/
+    height: 510px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo__information--panorama {
+    width: 940px;
+    margin: 0 auto
+  }
+
+  .photo--panorama {
+    width: 100%;
+  }
+
+  .photo__link {
+    /*Временно*/
+    height: 400px;
+  }
+
+  .photo--panorama .photo__link {
+    /*Временно*/
+    height: 506px;
+  }
 }

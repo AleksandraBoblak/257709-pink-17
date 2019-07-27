@@ -2,6 +2,14 @@
   color: #283645;
 }
 
+.photos__list--table {
+  padding: 30px 10px 10px 10px;
+}
+
+.photos__list {
+  .list-reset();
+}
+
 .photos__lead {
   display: block;
   text-align: center;
@@ -10,4 +18,27 @@
   line-height: 30px;
 
   padding: 55px 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .photos__lead {
+    font-size: 18px;
+    max-width: 550px;
+    margin: auto;
+  }
+
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photos__list--table {
+    padding: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos__list--table {
+    .container-desktop();
+  }
 }
