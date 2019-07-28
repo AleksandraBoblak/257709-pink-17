@@ -1,3 +1,8 @@
+.site-list {
+  flex-direction: column;
+  width: 100%;
+}
+
 .site-list__item {
   text-transform: uppercase;
   border-bottom: 1px solid #000000;
@@ -19,5 +24,15 @@
 
   &:hover {
     color: #d22856;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    flex-direction: row;
+  }
+
+  .site-list__item {
+    border: none;
   }
 }

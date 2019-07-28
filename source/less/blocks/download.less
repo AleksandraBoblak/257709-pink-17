@@ -2,6 +2,8 @@
   padding: 28px 20px;
   background-color: #283645;
   color: #ffffff;
+
+  text-align: center;
 }
 
 .download__button {
@@ -14,12 +16,23 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
+  max-width: 300px;
 
   padding: 15px;
+  margin: auto;
   margin-bottom: 30px;
 
   border: 3px solid #ffffff;
   border-radius: 30px;
+
+  &:hover {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .download__list {
@@ -41,4 +54,37 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
+}
+
+.download__slogan {
+  display: none;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+@media (min-width: @tablet-width) {
+  .download {
+    margin-top: -545px;
+    background: none;
+    width: 50%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download__button {
+    padding: 15px 45px;
+  }
+
+  .download__slogan {
+    display: block;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download__slogan {
+    font-size: 50px;
+  }
 }
