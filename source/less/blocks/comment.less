@@ -1,7 +1,8 @@
 .comment {
-  padding: 25px 20px;
   background-color: #f2f2f2;
   margin: 0 10px 10px 10px;
+  padding: 31px 27px;
+  box-sizing: border-box;
 
   &--panorama {
     margin: 0 20px 10px 20px;
@@ -12,6 +13,7 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
+  margin: 0;
 }
 
 .comment__timeframe {
@@ -20,19 +22,32 @@
   font-weight: 300;
 }
 
-.comment__description {
+.comment__text {
   font-size: 12px;
   line-height: 24px;
   font-weight: light;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
-  .comment--panorama {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    min-width: 620px;
-    box-sizing: border-box;
+  .comment {
+    min-height: 155px;
+
+    &--panorama {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      min-width: 620px;
+      box-sizing: border-box;
+
+      min-height: 121px;
+    }
+  }
+
+  .comment__text--panorama {
+    order: 5;
+    flex-grow: 1;
+    width: 100%;
   }
 }
 

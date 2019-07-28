@@ -1,5 +1,9 @@
-.photo:not(:last-child) {
+.photo {
   margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .photo__day-image {
@@ -19,7 +23,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .photo:not(.photo--panorama) {
+  .photo {
     width: 300px;
     flex-grow: 1;
   }
@@ -28,11 +32,11 @@
     /*Временно*/
     display: block;
     height: 300px;
-  }
 
-  .photo--panorama .photo__link {
-    /*Временно*/
-    height: 510px;
+    &--panorama {
+      /*Временно*/
+      height: 510px;
+    }
   }
 }
 
@@ -44,10 +48,10 @@
   .photo__link {
     /*Временно*/
     height: 400px;
-  }
 
-  .photo--panorama .photo__link {
-    /*Временно*/
-    height: 506px;
+    &--panorama {
+      /*Временно*/
+      height: 506px;
+    }
   }
 }
