@@ -1,12 +1,9 @@
 .page-title {
-
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
   background-color: #283645;
-
-  padding: 30px;
 
   &--main {
     min-height: 125vw;
@@ -19,6 +16,10 @@
   &--photo,
   &--copmetition {
     min-height: 75vw;
+  }
+
+  &--higher {
+    background-position: left bottom, center -65px;
   }
 }
 
@@ -43,12 +44,17 @@
       background-size: auto, auto;
     }
 
-    &__title {
-      max-width: 500px;
-      margin: auto;
-      font-size: 50px;
-      margin-top: 190px;
+    &--higher {
+      min-height: 620px;
+      background-position: left bottom, center -110px;
     }
+  }
+
+  .page-title__title {
+    max-width: 500px;
+    margin: auto;
+    font-size: 50px;
+    margin-top: 190px;
   }
 }
 
