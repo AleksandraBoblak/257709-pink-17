@@ -8,6 +8,7 @@
 </head>
 <body>
   <header class="page-header">
+    <div class="page-header__wrapper">
     <a class="page-header__logo">
       <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение «Пинк»">
     </a>
@@ -29,10 +30,11 @@
           </li>
         </ul>
       </div>
+    </div>
     </nav>
   </header>
   <main class="page-main">
-    <div class="page-title page-title--higher page-title--main">
+    <div class="page-title page-title--main">
       <h1 class="visually-hidden">Приложение «Пинк»</h1>
     </div>
     <section class="download">
@@ -81,7 +83,7 @@
       var navToggle = document.querySelector('.main-nav__toggle');
       var logoBg = document.querySelector('.page-header__logo');
       var headerBg = document.querySelector('.page-header');
-      var bgHigher = document.querySelector('.page-title--higher');
+      var bgHigher = document.querySelector('.page-title');
 
       navMain.classList.remove('main-nav--nojs');
 

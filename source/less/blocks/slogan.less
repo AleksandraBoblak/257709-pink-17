@@ -5,9 +5,37 @@
 }
 
 .slogan__line {
-  margin: 0;
+  margin: 0 auto;
 
   &--first {
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .slogan {
+    font-size: 40px;
+    max-width: 820px;
+  }
+
+  .slogan__line {
+    &--first {
+      margin-bottom: 0;
+    }
+
+    &--second {
+    max-width: 400px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slogan {
+    font-size: 50px;
+    line-height: 1.2em;
+  }
+
+  .slogan__line--second {
+    max-width: 450px;
   }
 }

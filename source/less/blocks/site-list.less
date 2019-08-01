@@ -1,4 +1,5 @@
 .site-list {
+  display: flex;
   flex-direction: column;
   width: 100%;
 }
@@ -34,9 +35,15 @@
 @media (min-width: @desktop-width) {
   .site-list {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .site-list__item {
     border: none;
+    text-transform: none;
+  }
+
+  .site-list__link {
+    font-weight: normal;
   }
 }

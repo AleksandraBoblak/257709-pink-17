@@ -62,14 +62,18 @@
   display: none;
   font-size: 40px;
   font-weight: 300;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .download {
-    margin-top: -545px;
     background: none;
     width: 50%;
-    margin-bottom: 50px;
+
+    margin-top: -529px;
+    margin-bottom: 117px;
+    padding: 0 5px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,12 +85,46 @@
 
   .download__slogan {
     display: block;
-    max-width: 300px;
+    max-width: 200px;
+    line-height: 1.2em;
+    margin-bottom: 32px;
+  }
+
+  .download__list {
+    //временно для сетки
+    margin-bottom: 57px;
+  }
+
+  .download__description {
+    margin: 0;
+    font-size: 18px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .download {
+    margin-top: -635px;
+    margin-right: 53%;
+    width: auto;
+  }
+
   .download__slogan {
     font-size: 50px;
+    max-width: 250px;
+    margin-bottom: 52px;
+  }
+
+  .download__button {
+    font-size: 21px;
+    padding: 15px 30px;
+  }
+
+  .download__list {
+    //временно
+    min-height: 62px;
+  }
+
+  .download__description {
+    max-width: 350px;
   }
 }
