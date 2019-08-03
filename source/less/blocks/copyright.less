@@ -1,7 +1,35 @@
+.copyright {
+  display: flex;
+}
+
 .copyright__text {
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
 
-  color: #283645;
+  color: @bg-light-blue;
+
+  align-self: center;
+  margin-right: 10px;
+}
+
+.copyright__link {
+  position: relative;
+  display: block;
+
+  cursor: pointer;
+}
+
+.copyright__link::after {
+  content: "";
+
+  display: block;
+
+  width: 27px;
+  height: 34px;
+
+  background-image: url("../img/logo-htmlacademy-pink.svg");
+  background-repeat: no-repeat;
+  background-size: 27px 34px;
+  background-position: 0 0;
 }

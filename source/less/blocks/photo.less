@@ -1,31 +1,51 @@
 .photo {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  &--panorama {
+    position: relative;
+  }
+}
+
+.photo__link {
+  /*Временно*/
+  display: block;
+  height: 180px;
+
+  &--panorama {
+    /*Временно*/
+    height: 137px;
+  }
 }
 
 .photo__day-image {
-  display: block;
+  position: absolute;
+  top: 1px;
+  right: 21px;
+
+  height: 36px;
+  width: 140px;
+  box-sizing: border-box;
+  padding: 6px 0;
 
   font-size: 12px;
   line-height: 24px;
   font-weight: bold;
-
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
 
-  padding: 6px 20px;
   background-color: #d22856;
-  max-width: 140px;
 }
 
 @media (min-width: @tablet-width) {
   .photo {
     width: 300px;
     flex-grow: 1;
+    margin-bottom: 10px;
   }
 
   .photo__link {
@@ -37,6 +57,10 @@
       /*Временно*/
       height: 510px;
     }
+  }
+
+  .photo__day-image {
+    top: 57px;
   }
 }
 

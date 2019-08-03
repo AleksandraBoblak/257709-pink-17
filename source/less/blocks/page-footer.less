@@ -1,9 +1,10 @@
 .page-footer {
-  padding: 20px;
+  padding: 14px;
 }
 
 .page-footer__social {
   padding: 40px 70px;
+  margin-bottom: 23px;
 }
 
 .page-footer__wrapper {
@@ -12,10 +13,19 @@
   align-items: center;
 }
 
+.page-footer__logo {
+  margin-bottom: 20px;
+}
+
 @media (min-width: @tablet-width) {
+  .page-footer {
+    padding: 0;
+  }
+
   .page-footer__wrapper {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 19px;
   }
 
   .page-footer__social {
