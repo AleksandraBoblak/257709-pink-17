@@ -14,12 +14,12 @@
   }
 
   &--photo,
-  &--copmetition {
+  &--competition {
     min-height: 235px;
   }
 
   &--higher {
-    background-position: left bottom, center -65px;
+    background-position: center -65px;
   }
 }
 
@@ -41,7 +41,8 @@
   padding-top: 27px;
 }
 
-.page-title--photo.page-title--higher {
+.page-title--photo.page-title--higher,
+.page-title--competition.page-title--higher {
   background-position: center -65px;
   min-height: 170px;
 }
@@ -55,18 +56,21 @@
       background-size: auto, auto;
     }
 
-    &--photo {
+    &--photo,
+    &--competition {
       min-height: 440px;
       background-position: center -65px;
     }
-
-    &--higher {
-      min-height: 620px;
-      background-position: -19px bottom, center -110px;
-    }
   }
 
-  .page-title--photo.page-title--higher {
+  .page-title--main.page-title--higher {
+    min-height: 620px;
+    background-position: -19px bottom, center -110px;
+  }
+
+  .page-title--photo.page-title--higher,
+  .page-title--competition.page-title--higher {
+    min-height: 330px;
     background-position: center -175px;
   }
 
@@ -76,6 +80,11 @@
     font-size: 50px;
     //margin-top: 190px;
     padding-top: 170px;
+  }
+
+  .page-title--higher .page-title__title {
+    padding-top: 63px;
+    line-height: 1.2em;
   }
 }
 
@@ -87,5 +96,15 @@
       background-position: right bottom, center 0;
       background-size: auto, auto;
     }
+
+    &--photo,
+    &--competition {
+      min-height: 394px;
+      background-position: center center;
+    }
+  }
+
+  .page-title--competition .page-title__title {
+    max-width: 750px;
   }
 }
