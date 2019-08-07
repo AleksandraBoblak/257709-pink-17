@@ -10,7 +10,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -45px;
+  top: -49px;
   right: 20px;
   z-index: 2;
 
@@ -32,7 +32,7 @@
   background-size: 50px 24px;
 
   &:hover,
-  &focus {
+  &:focus {
     background-image: url("../img/icon-menu-burger-pink.svg");
   }
 
@@ -49,7 +49,7 @@
   background-image: url("../img/icon-menu-cross.svg");
   background-repeat: no-repeat;
   background-position: center 0;
-  background-size: 50px 24px;
+  background-size: 23px 24px;
 
   &:hover,
   &focus {
@@ -93,10 +93,14 @@
 
 @media (min-width: @desktop-width) {
   .main-nav__wrapper {
-    width: 640px;
+    width: 620px;
   }
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav {
+    width: 66%;
   }
 }

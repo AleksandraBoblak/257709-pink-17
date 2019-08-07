@@ -18,9 +18,7 @@
     min-height: 235px;
   }
 
-  &--higher {
-    background-position: center -65px;
-  }
+  //&--higher
 }
 
 .page-title__title {
@@ -39,6 +37,11 @@
 
 .page-title--higher .page-title__title {
   padding-top: 27px;
+}
+
+.page-title--main.page-title--higher {
+  min-height: 397px;
+  background-position: left bottom, center -65px;
 }
 
 .page-title--photo.page-title--higher,
@@ -93,7 +96,7 @@
     &--main {
       min-height: 853px;
       background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
-      background-position: right bottom, center 0;
+      background-position: 24px bottom, center 0;
       background-size: auto, auto;
     }
 
@@ -102,6 +105,11 @@
       min-height: 394px;
       background-position: center center;
     }
+  }
+
+  .page-title__title {
+    line-height: 1.2em;
+    padding-top: 172px;
   }
 
   .page-title--competition .page-title__title {
