@@ -1,38 +1,35 @@
 .advantages__slogan {
-  font-size: 24px;
-  line-height: normal;
-  font-weight: 300;
-
-  display: block;
   text-align: center;
-  padding: 30px;
-  padding-bottom: 0;
+  padding: 38px 30px 30px 30px;
   margin: 0 auto;
 }
 
 .advantages__list-wrapper {
   background-color: #f2f2f2;
-  padding: 30px;
-  padding-top: 100px;
+  padding: 78px 30px 0 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  background-position: 0 -30px;
+  background-position: 0 -70px;
 }
 
 .advantages__list {
   .list-reset();
   text-align: center;
-  width: 320px;
+}
+
+.advantages__item {
+  margin-bottom: 30px;
 }
 
 .advantages__title {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
+  margin: 0;
 }
 
 .advantages__description {
@@ -42,17 +39,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .advantages__slogan {
-    font-size: 40px;
-  }
-
   .advantages__list-wrapper {
     align-items: flex-end;
     background-image: url("../img/iphone-screen-3-tablet@1x.png"), url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat, no-repeat;
-    background-position: 6% 0, 0 -40px;
+    background-position: 5% 8px, 0 -40px;
     background-size: auto, auto;
-    padding-top: 50px;
   }
 
   .advantages__list {
@@ -63,33 +55,47 @@
 
     text-align: left;
   }
+
+  .advantages__item {
+    margin-bottom: 18px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .advantages__slogan {
-    font-size: 50px;
-    max-width: 820px;
+  .advantages {
+    padding-top: 36px;
   }
 
   .advantages__list-wrapper {
     align-items: center;
-    background-image: none;
+    margin-top: 47px;
+    padding: 0;
+
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: auto;
   }
 
   .advantages__list {
-    width: 940px;
-    max-width: 940px;
+    width: 960px;
 
     flex-direction: row;
     justify-content: space-around;
     margin: auto;
 
     text-align: center;
+    //padding: 0 30px;
+    box-sizing: border-box;
   }
 
   .advantages__item {
-    max-width: 250px;
-    padding-top: 360px;
+    max-width: 240px;
+    padding-top: 355px;
 
     &--mood {
       background-image: url("../img/iphone-screen-1-desktop@1x.png");
@@ -111,5 +117,17 @@
       background-position: center 0;
       background-size: auto;
     }
+  }
+
+  .advantages__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+
+  .advantages__description {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
   }
 }

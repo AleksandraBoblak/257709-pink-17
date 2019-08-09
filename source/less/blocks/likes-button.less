@@ -8,4 +8,53 @@
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px 0 0;
+}
+
+.likes-button::before {
+  content: "";
+  display: block;
+  align-self: center;
+  margin-right: 19px;
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 12px;
+  background-position: 0 0;
+}
+
+@media (min-width: @tablet-width) {
+  .comment--panorama .likes-button {
+    width: 125px;
+  }
+
+  .comment--panorama .likes-button::before {
+    margin-right: 4px;
+  }
+
+  .likes-button {
+    width: 100%;
+    padding: 0 1px 0 0;
+  }
+
+  .likes-button::before {
+    order: 3;
+    margin-right: 0;
+  }
+
+  .photos__list--table .likes-button {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos__list--table .likes-button {
+    margin-bottom: 10px;
+  }
 }

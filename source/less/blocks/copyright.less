@@ -1,7 +1,66 @@
+.copyright {
+  display: flex;
+}
+
 .copyright__text {
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
 
-  color: #283645;
+  color: @bg-light-blue;
+
+  align-self: center;
+  margin-right: 10px;
+}
+
+.copyright__link {
+  position: relative;
+  display: block;
+
+  cursor: pointer;
+}
+
+.copyright__link::after {
+  content: "";
+
+  display: block;
+
+  width: 27px;
+  height: 34px;
+
+  background-image: url("../img/logo-htmlacademy-pink.svg");
+  background-repeat: no-repeat;
+  background-size: 27px 34px;
+  background-position: 0 0;
+}
+
+.copyright__link:hover::after,
+.copyright__link:focus::after {
+  background-image: url("../img/logo-htmlacademy.svg");
+}
+
+.copyright__link:active::after {
+  opacity: 0.3;
+  transition: opacity 100ms;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    padding-top: 9px;
+  }
+
+  .copyright__text {
+    margin-right: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    margin-right: 9px;
+  }
+
+  .copyright__text {
+    font-size: 18px;
+    margin-right: 9px;
+  }
 }
