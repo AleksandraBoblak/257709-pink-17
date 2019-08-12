@@ -10,7 +10,11 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение «Пинк»">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg"/>
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg"/>
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Приложение «Пинк»">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
@@ -43,7 +47,7 @@
       <ul class="photos__list">
         <li class="photo photo--panorama">
           <a class="photo__link photo__link--panorama" href="#">
-            <img class="photo__image photo__image--panorama" src="img/picture-panorama.jpg" width="320" height="137" alt="Панорама">
+            <img class="photo__image photo__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама">
           </a>
           <span class="photo__day-image">Панорама дня</span>
           <div class="comment comment--panorama">
@@ -56,7 +60,7 @@
       <ul class="photos__list photos__list--table">
         <li class="photo">
           <a class="photo__link" href="#">
-            <img class="photo__image" src="img/picture-car.jpg" width="280" height="180" alt="Автомобиль">
+            <img class="photo__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Автомобиль">
           </a>
           <div class="comment">
             <p class="comment__author-name">Левон <span class="comment__timeframe">(5 часов назад)</span></p>
@@ -66,7 +70,7 @@
         </li>
         <li class="photo">
           <a class="photo__link" href="#">
-            <img class="photo__image" src="img/picture-drums.jpg" width="280" height="180" alt="Барабаны">
+            <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабаны">
           </a>
           <div class="comment">
             <p class="comment__author-name">Антон <span class="comment__timeframe">(12 часов назад)</span></p>
@@ -76,7 +80,7 @@
         </li>
         <li class="photo">
           <a class="photo__link" href="#">
-            <img class="photo__image" src="img/picture-skyscraper.jpg" width="280" height="180" alt="Небоскреб">
+            <img class="photo__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Небоскреб">
           </a>
           <div class="comment">
             <p class="comment__author-name">Борис <span class="comment__timeframe">(20 часов назад)</span></p>
@@ -86,7 +90,7 @@
         </li>
         <li class="photo">
           <a class="photo__link" href="#">
-            <img class="photo__image" src="img/picture-bakhcha.jpg" width="280" height="180" alt="Кубанская бахча">
+            <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Кубанская бахча">
           </a>
           <div class="comment">
             <p class="comment__author-name">Сергей <span class="comment__timeframe">(25 часов назад)</span></p>
@@ -96,7 +100,7 @@
         </li>
         <li class="photo">
           <a class="photo__link" href="#">
-            <img class="photo__image" src="img/picture-mountains.jpg" width="280" height="180" alt="Горы">
+            <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Горы">
           </a>
           <div class="comment">
             <p class="comment__author-name">Максим <span class="comment__timeframe">(40 часов назад)</span></p>
@@ -105,7 +109,7 @@
           </div>
           <li class="photo">
             <a class="photo__link" href="#">
-              <img class="photo__image" src="img/picture-plane.jpg" width="280" height="180" alt="Самолет">
+              <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Самолет">
             </a>
             <div class="comment">
               <p class="comment__author-name">Надежда <span class="comment__timeframe">(45 часов назад)</span></p>
