@@ -1,27 +1,21 @@
 .photo {
-  margin-bottom: 22px;
+  margin-bottom: 11px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 
   &--panorama {
     position: relative;
   }
 }
 
-.photo__link {
-  /*Временно*/
-  display: block;
-  height: 180px;
+.photos__list--table .photo:last-child {
+  margin-bottom: 0;
+}
 
-  &--panorama {
-    /*Временно*/
-    height: 137px;
-  }
+.photo__link {
+  display: block;
+  //margin-bottom: -5px;
 }
 
 .photo__day-image {
@@ -48,26 +42,20 @@
   .photo {
     width: 300px;
     flex-grow: 1;
-    margin: 10px;
-
-    &--panorama {
-      margin: 0 0 10px 0;
-    }
+    margin-bottom: 20px;
   }
 
   .photo__link {
-    /*Временно*/
     display: block;
-    height: 300px;
-
-    &--panorama {
-      /*Временно*/
-      height: 510px;
-    }
   }
 
   .photo__day-image {
     top: 57px;
+  }
+
+  .photo__image--panorama {
+    height: 510px;
+    max-width: unset;
   }
 }
 
@@ -76,21 +64,12 @@
     width: 100%;
   }
 
-  .photo__link {
-    /*Временно*/
-    height: 400px;
-
-    &--panorama {
-      /*Временно*/
-      height: 506px;
-    }
-  }
-
   .photo__day-image {
     right: 13px;
+    top: 53px;
   }
 
   .photos__list--table .photo {
-    margin: 25px 10px 28px 10px;
+    margin: 0 10px 60px 10px;
   }
 }
