@@ -150,6 +150,47 @@
               </li>
             </ul>
           </section>
+          <section class="upload">
+            <p class="upload__lead">Затмите их всех!
+              Выкладывайте все, что накопилось в телефоне!
+            </p>
+            <form class="upload__form" method="get" action="https://echo.htmlacademy.ru">
+              <a class="photo__link" href="#">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x"/>
+                  <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x"/>
+                  <img class="photo__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Горы">
+                </picture>
+              </a>
+              <ul class="upload__list edit-list">
+                <li class="edit-list__item edit-list__item--crop">
+                  <span class="visually-hidden">Обрезать</span>
+                  <div class="scale">
+                    <div class="scale__bar"></div>
+                    <div class="scale__range-toggle"></div>
+                  </div>
+                </li>
+                <li class="edit-list__item edit-list__item--fill">
+                  <span class="visually-hidden">Заливка</span>
+                  <div class="scale">
+                    <div class="scale__bar"></div>
+                    <div class="scale__range-toggle"></div>
+                  </div>
+                </li>
+                <li class="edit-list__item edit-list__item--contrast">
+                  <span class="visually-hidden">Контраст</span>
+                  <div class="scale">
+                    <div class="scale__bar"></div>
+                    <div class="scale__range-toggle"></div>
+                  </div>
+                </li>
+              </ul>
+              <div class="upload__buttons">
+                <button class="upload__button" type="submit">Запостить</button>
+                <button class="upload__button" type="reset">Отмена</button>
+              </div>
+            </form>
+          </section>
         </main>
         <footer class="page-footer">
           <div class="page-footer__wrapper">
