@@ -15,6 +15,17 @@
 
 .page-footer__logo {
   margin-bottom: 20px;
+  transition: opacity 100ms;
+}
+
+.page-footer__logo:hover,
+.page-footer__logo:focus {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(73%) saturate(2162%) hue-rotate(322deg) brightness(89%) contrast(94%);
+}
+
+.page-footer__logo:active {
+  filter: none;
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
@@ -49,5 +60,14 @@
 
   .page-footer__social {
     margin-left: 17px;
+  }
+
+  .page-footer__logo:hover,
+  .page-footer__logo:focus {
+    filter: none;
+  }
+
+  .page-footer__logo:active {
+    opacity: 1;
   }
 }

@@ -13,7 +13,11 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение «Пинк»">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg"/>
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg"/>
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Приложение «Пинк»">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
@@ -46,111 +50,142 @@
       <ul class="photos__list">
         <li class="photo photo--panorama">
           <a class="photo__link photo__link--panorama" href="#">
-            <img class="photo__image photo__image--panorama" src="img/picture-panorama.jpg" width="320" height="137" alt="Панорама">
-          </a>
-          <span class="photo__day-image">Панорама дня</span>
-          <div class="comment comment--panorama">
-            <p class="comment__author-name">Анна <span class="comment__timeframe">(5 минут назад)</span></p>
-            <p class="comment__text comment__text--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <button class="likes-button" type="button"><span>Нравится: <span>215</span></span></button>
-          </div>
-        </li>
-      </ul>
-      <ul class="photos__list photos__list--table">
-        <li class="photo">
-          <a class="photo__link" href="#">
-            <img class="photo__image" src="img/picture-car.jpg" width="280" height="180" alt="Автомобиль">
-          </a>
-          <div class="comment">
-            <p class="comment__author-name">Левон <span class="comment__timeframe">(5 часов назад)</span></p>
-            <p class="comment__text">Вчера он на луну летал, сегодня в руки к нам попал</p>
-            <button class="likes-button" type="button"><span>Нравится: <span>356</span></span></button>
-          </div>
-        </li>
-        <li class="photo">
-          <a class="photo__link" href="#">
-            <img class="photo__image" src="img/picture-drums.jpg" width="280" height="180" alt="Барабаны">
-          </a>
-          <div class="comment">
-            <p class="comment__author-name">Антон <span class="comment__timeframe">(12 часов назад)</span></p>
-            <p class="comment__text">Соседи будут рады!</p>
-            <button class="likes-button" type="button"><span>Нравится: <span>666</span></span></button>
-          </div>
-        </li>
-        <li class="photo">
-          <a class="photo__link" href="#">
-            <img class="photo__image" src="img/picture-skyscraper.jpg" width="280" height="180" alt="Небоскреб">
-          </a>
-          <div class="comment">
-            <p class="comment__author-name">Борис <span class="comment__timeframe">(20 часов назад)</span></p>
-            <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном</p>
-            <button class="likes-button" type="button"><span>Нравится: <span>215</span></span></button>
-          </div>
-        </li>
-        <li class="photo">
-          <a class="photo__link" href="#">
-            <img class="photo__image" src="img/picture-bakhcha.jpg" width="280" height="180" alt="Кубанская бахча">
-          </a>
-          <div class="comment">
-            <p class="comment__author-name">Сергей <span class="comment__timeframe">(25 часов назад)</span></p>
-            <p class="comment__text">Самая кубанская в мире!</p>
-            <button class="likes-button" type="button"><span>Нравится: <span>4</span></span></button>
-          </div>
-        </li>
-        <li class="photo">
-          <a class="photo__link" href="#">
-            <img class="photo__image" src="img/picture-mountains.jpg" width="280" height="180" alt="Горы">
-          </a>
-          <div class="comment">
-            <p class="comment__author-name">Максим <span class="comment__timeframe">(40 часов назад)</span></p>
-            <p class="comment__text">Где снег-то?</p>
-            <button class="likes-button" type="button"><span>Нравится: <span>150</span></span></button>
-          </div>
-          <li class="photo">
-            <a class="photo__link" href="#">
-              <img class="photo__image" src="img/picture-plane.jpg" width="280" height="180" alt="Самолет">
-            </a>
-            <div class="comment">
-              <p class="comment__author-name">Надежда <span class="comment__timeframe">(45 часов назад)</span></p>
-              <p class="comment__text">Всем GM и взаимные лайки!</p>
-              <button class="likes-button" type="button"><span>Нравится: <span>2560</span></span></button>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="index.html">
-          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Приложение «Пинк»">
-        </a>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
-                <span class="visually-hidden">Мы в Твиттере</span>
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                  <img class="photo__image photo__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама">
+                </picture>
               </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-                <span class="visually-hidden">Мы в Фейсбуке</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Мы на Youtube</span>
-              </a>
+              <span class="photo__day-image">Панорама дня</span>
+              <div class="comment comment--panorama">
+                <p class="comment__author-name">Анна <span class="comment__timeframe">(5 минут назад)</span></p>
+                <p class="comment__text comment__text--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <button class="likes-button" type="button"><span>Нравится: <span>215</span></span></button>
+              </div>
             </li>
           </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">HTML Academy</span>
-          </a>
-        </div>
-      </div>
-    </footer>
-    <script src="js/app.js"></script>
-  </body>
-  </html>
+          <ul class="photos__list photos__list--table">
+            <li class="photo">
+              <a class="photo__link" href="#">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x"/>
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x"/>
+                  <img class="photo__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Автомобиль">
+                </picture>
+              </a>
+              <div class="comment">
+                <p class="comment__author-name">Левон <span class="comment__timeframe">(5 часов назад)</span></p>
+                <p class="comment__text">Вчера он на луну летал, сегодня в руки к нам попал</p>
+                <button class="likes-button" type="button"><span>Нравится: <span>356</span></span></button>
+              </div>
+            </li>
+            <li class="photo">
+              <a class="photo__link" href="#">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x"/>
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x"/>
+                  <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабаны">
+                </picture>
+              </a>
+              <div class="comment">
+                <p class="comment__author-name">Антон <span class="comment__timeframe">(12 часов назад)</span></p>
+                <p class="comment__text">Соседи будут рады!</p>
+                <button class="likes-button" type="button"><span>Нравится: <span>666</span></span></button>
+              </div>
+            </li>
+            <li class="photo">
+              <a class="photo__link" href="#">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x"/>
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x"/>
+                  <img class="photo__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Небоскреб">
+                </picture>
+              </a>
+              <div class="comment">
+                <p class="comment__author-name">Борис <span class="comment__timeframe">(20 часов назад)</span></p>
+                <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном</p>
+                <button class="likes-button" type="button"><span>Нравится: <span>215</span></span></button>
+              </div>
+            </li>
+            <li class="photo">
+              <a class="photo__link" href="#">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x"/>
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x"/>
+                  <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Кубанская бахча">
+                </picture>
+              </a>
+              <div class="comment">
+                <p class="comment__author-name">Сергей <span class="comment__timeframe">(25 часов назад)</span></p>
+                <p class="comment__text">Самая кубанская в мире!</p>
+                <button class="likes-button" type="button"><span>Нравится: <span>4</span></span></button>
+              </div>
+            </li>
+            <li class="photo">
+              <a class="photo__link" href="#">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x"/>
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x"/>
+                  <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Горы">
+                </picture>
+              </a>
+              <div class="comment">
+                <p class="comment__author-name">Максим <span class="comment__timeframe">(40 часов назад)</span></p>
+                <p class="comment__text">Где снег-то?</p>
+                <button class="likes-button" type="button"><span>Нравится: <span>150</span></span></button>
+              </div>
+              <li class="photo">
+                <a class="photo__link" href="#">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x"/>
+                    <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x"/>
+                    <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Самолет">
+                  </picture>
+                </a>
+                <div class="comment">
+                  <p class="comment__author-name">Надежда <span class="comment__timeframe">(45 часов назад)</span></p>
+                  <p class="comment__text">Всем GM и взаимные лайки!</p>
+                  <button class="likes-button" type="button"><span>Нравится: <span>2560</span></span></button>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </main>
+        <footer class="page-footer">
+          <div class="page-footer__wrapper">
+            <a class="page-footer__logo" href="index.html">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg"/>
+                <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Приложение «Пинк»">
+              </picture>
+            </a>
+            <div class="page-footer__social social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+                    <span class="visually-hidden">Мы в Твиттере</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                    <span class="visually-hidden">Мы в Фейсбуке</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                    <span class="visually-hidden">Мы на Youtube</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__copyright copyright">
+              <b class="copyright__text">Разработано</b>
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <span class="visually-hidden">HTML Academy</span>
+              </a>
+            </div>
+          </div>
+        </footer>
+        <script src="js/app.js"></script>
+      </body>
+      </html>

@@ -63,6 +63,14 @@
       margin-bottom: 0;
     }
   }
+
+  @media (min-width: 660px) and (min-resolution: @retina-dpi),
+    (min-width: 660px) and (min-resolution: @retina-dppx) {
+    .advantages__list-wrapper {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png"), url("../img/bg-triangle-white.svg");
+      background-size: 270px, auto;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -89,7 +97,6 @@
     margin: auto;
 
     text-align: center;
-    //padding: 0 30px;
     box-sizing: border-box;
   }
 
@@ -129,5 +136,25 @@
     font-size: 18px;
     line-height: 30px;
     margin: 0;
+  }
+
+  @media (min-width: 960px) and (min-resolution: @retina-dpi),
+    (min-width: 960px) and (min-resolution: @retina-dppx) {
+    .advantages__item {
+      &--mood {
+        background-image: url("../img/iphone-screen-1-desktop@2x.png");
+        background-size: 290px auto;
+      }
+
+      &--world {
+        background-image: url("../img/iphone-screen-2-desktop@2x.png");
+        background-size: 290px auto;
+      }
+
+      &--friends {
+        background-image: url("../img/iphone-screen-3-desktop@2x.png");
+        background-size: 290px auto;
+      }
+    }
   }
 }
