@@ -95,9 +95,9 @@
           </li>
         </ul>
         <div class="reviews__slider slider">
-          <input class="slider__button" type="radio" id="reviews-btn-1" name="toggle" checked>
-          <input class="slider__button" type="radio" id="reviews-btn-2" name="toggle">
-          <input class="slider__button" type="radio" id="reviews-btn-3" name="toggle">
+          <input class="slider__button" type="radio" id="reviews-btn-1" name="reviews-toggle" checked>
+          <input class="slider__button" type="radio" id="reviews-btn-2" name="reviews-toggle">
+          <input class="slider__button" type="radio" id="reviews-btn-3" name="reviews-toggle">
           <div class="slider-controls">
             <label for="reviews-btn-1"></label>
             <label for="reviews-btn-2"></label>
@@ -107,30 +107,32 @@
       </section>
       <section class="plans">
         <h2 class="visually-hidden">Тарифные планы</h2>
-        <div class="plans__table-column"></div>
-        <header class="plans__table-header-group">
-          <ul class="plans__table-row">
-            <li class="plans__table-cell">Стандарт<span class="plans__price">3,99 USD</span></li>
-          </ul>
-        </header>
-        <section class="plans__table-row-group">
-          <ul class="plans__table-row">
-            <li class="plans__table-cell">Розовый фильтр</li>
-            <li class="plans__table-cell"><span class="visually-hidden">Да</span></li>
-          </ul>
-          <ul class="plans__table-row">
-            <li class="plans__table-cell">Смайлики</li>
-            <li class="plans__table-cell"><span class="visually-hidden">Да</span></li>
-          </ul>
-          <ul class="plans__table-row">
-            <li class="plans__table-cell">Комментарии</li>
-            <li class="plans__table-cell"><span class="visually-hidden">Нет</span></li>
-          </ul>
-        </section>
+        <div class="plans__table">
+          <div class="plans__table-column"></div>
+          <header class="plans__table-header-group">
+            <ul class="plans__table-row plans__table-row--header">
+              <li class="plans__table-cell">Стандарт<p class="plans__price">3,99 USD</p></li>
+            </ul>
+          </header>
+          <section class="plans__table-row-group">
+            <ul class="plans__table-row">
+              <li class="plans__table-cell">Розовый фильтр</li>
+              <li class="plans__table-cell"><span class="visually-hidden">Да</span></li>
+            </ul>
+            <ul class="plans__table-row">
+              <li class="plans__table-cell">Смайлики</li>
+              <li class="plans__table-cell"><span class="visually-hidden">Да</span></li>
+            </ul>
+            <ul class="plans__table-row">
+              <li class="plans__table-cell">Комментарии</li>
+              <li class="plans__table-cell"><span class="visually-hidden">Нет</span></li>
+            </ul>
+          </section>
+        </div>
         <div class="plans__slider slider">
-          <input type="radio" id="plans-btn-1" name="toggle" checked>
-          <input type="radio" id="plans-btn-2" name="toggle">
-          <input type="radio" id="plans-btn-3" name="toggle">
+          <input type="radio" id="plans-btn-1" name="plans-toggle" checked>
+          <input type="radio" id="plans-btn-2" name="plans-toggle">
+          <input type="radio" id="plans-btn-3" name="plans-toggle">
           <div class="slider-controls">
             <label for="plans-btn-1"></label>
             <label for="plans-btn-2"></label>
@@ -141,7 +143,7 @@
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <p>Остались вопросы? Свяжитесь с нами!</p>
+      <p class="contacts__lead">Остались вопросы? Свяжитесь с нами!</p>
       <ul class="contacts__list">
         <li class="contacts__item">
           <p class="contacts__action">Звоните:</p>

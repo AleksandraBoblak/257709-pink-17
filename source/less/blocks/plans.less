@@ -1,3 +1,52 @@
+.plans {
+  background-color: @bg-grey;
+}
+
+.plans__table {
+  display: table;
+  border-collapse: collapse;
+  line-height: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.plans__table-column {
+  display: table-column;
+}
+
+.plans__table-header-group {
+  display: table-header-group;
+  background-color: @bg-light-blue;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.plans__price {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.plans__table-row-group {
+  display: table-row-group;
+  background-color: #ffffff;
+  color: @bg-light-blue;
+}
+
 .plans__table-row {
   .list-reset();
+  display: table-row;
+  width: 276px;
+  border: 2px solid #e5e5e5;
+
+  &--header {
+    text-align: center;
+  }
+}
+
+.plans__table-cell {
+  display: table-cell;
+  padding: 15px;
 }

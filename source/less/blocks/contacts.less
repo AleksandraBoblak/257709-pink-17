@@ -1,3 +1,36 @@
+.contacts {
+  color: @bg-light-blue;
+  text-align: center;
+}
+
+.contacts__lead {
+  font-size: 24px;
+  font-weight: 300;
+}
+
 .contacts__list {
   .list-reset();
+}
+
+.contacts__action {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contacts__link {
+  color: @pink;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 300;
+
+  &:hover,
+  &:focus {
+    color: @bg-light-blue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    text-decoration: none;
+    opacity: 0.3;
+  }
 }
