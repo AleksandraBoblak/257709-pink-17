@@ -1,5 +1,6 @@
 .plans {
   background-color: @bg-grey;
+  padding-top: 126px;
 }
 
 .plans__table {
@@ -8,11 +9,11 @@
   line-height: 30px;
   font-size: 14px;
   text-transform: uppercase;
-  width: 100%;
-}
-
-.plans__table-column {
-  display: table-column;
+  width: 608px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-left: -249px;
+  table-layout: fixed;
 }
 
 .plans__table-header-group {
@@ -38,7 +39,6 @@
 .plans__table-row {
   .list-reset();
   display: table-row;
-  width: 276px;
   border: 2px solid #e5e5e5;
 
   &--header {
@@ -49,4 +49,10 @@
 .plans__table-cell {
   display: table-cell;
   padding: 15px;
+  width: 276px;
+  box-sizing: border-box;
+
+  &--header {
+    padding: 16px 20px 20px 8px;
+  }
 }
