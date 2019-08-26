@@ -41,7 +41,6 @@
 .plans__table-row {
   .list-reset();
   display: table-row;
-  border: 2px solid #e5e5e5;
 
   &--header {
     text-align: center;
@@ -53,12 +52,97 @@
   padding: 15px;
   width: 276px;
   box-sizing: border-box;
+  border: 2px solid #e5e5e5;
 
   &--header {
     padding: 16px 20px 20px 8px;
   }
+
+  &--empty {
+    display: none;
+  }
+}
+
+.plans__row-name--main {
+  display: none;
 }
 
 .plans__slider {
   padding-bottom: 41px;
+}
+
+@media (min-width: @tablet-width) {
+  .plans {
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-position: 0 -26px;
+
+    padding-top: 102px;
+    padding-bottom: 72px;
+  }
+
+  .plans__table {
+    margin: 0 auto;
+  }
+
+  .plans__table-cell {
+    width: 154px;
+    padding: 6px 5px 8px 13px;
+
+    &--empty {
+      display: table-cell;
+      background-color: @bg-grey;
+      border: 2px solid @bg-grey;
+    }
+
+    &--header {
+      padding: 10px 0 0 0;
+      font-size: 16px;
+    }
+  }
+
+  .plans__row-name {
+    display: none;
+    text-transform: none;
+
+    &--main {
+      display: block;
+    }
+  }
+
+  .plans__price {
+    font-size: 18px;
+  }
+
+  .plans__slider {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .plans {
+    background-position: -10px -6px;
+    padding-top: 155px;
+    padding-bottom: 94px;
+    margin-bottom: 65px;
+  }
+
+  .plans__table {
+    width: 936px;
+    margin: 0 6px;
+  }
+
+  .plans__table-cell {
+    font-size: 18px;
+    padding: 12px 0 16px 21px;
+
+    &--header {
+      padding: 16px 0 23px 2px;
+      font-size: 18px;
+    }
+  }
+
+  .plans__price {
+    font-size: 24px;
+  }
 }

@@ -26,19 +26,59 @@
 }
 
 .contacts__link {
-  color: @pink;
   text-decoration: none;
   font-size: 24px;
   font-weight: 300;
 
-  &:hover,
-  &:focus {
-    color: @bg-light-blue;
-    text-decoration: underline;
+  .link-style();
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__lead {
+    font-size: 40px;
+    line-height: 1.2em;
+
+    max-width: 370px;
+    margin: 0 auto;
+    margin-bottom: 44px;
   }
 
-  &:active {
-    text-decoration: none;
-    opacity: 0.3;
+  .contacts__list {
+    max-width: 630px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contacts__item {
+    margin: 0 0 43px;
+
+    &:last-child {
+      max-width: 230px;
+    }
+  }
+
+  .contacts__action {
+    margin-bottom: 3px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__lead {
+    font-size: 50px;
+    max-width: 465px;
+    margin-bottom: 55px;
+  }
+
+  .contacts__list {
+    max-width: 940px;
+  }
+
+  .contacts__item {
+    &--special-order {
+      order: 2;
+    }
   }
 }

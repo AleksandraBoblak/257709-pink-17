@@ -84,11 +84,25 @@
         </ul>
       </div>
     </section>
+    <section class="research">
+      <h2 class="visually-hidden">Исследование</h2>
+      <span class="research__clock">24</span>
+      <div class="research__wrapper">
+        <p class="research__title">Эффект <br>на 24 часа!</p>
+        <p class="research__description">
+          Британские ученые провели исследования и доказали, что положительный эффект
+          от использования приложения длится целые сутки!
+        </p>
+        <a class="research__link" href="research.html">Узнать больше об исследовании</a>
+      </div>
+    </section>
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы</h2>
       <ul class="reviews__list">
         <li class="reviews__item">
-          <h3 class="reviews__author">Николай Петров</h3>
+          <h3 class="reviews__author">Николай Петров
+            <p class="reviews__author-info">25 лет, водитель трамвая</p>
+          </h3>
           <p class="reviews__text">«Это приложение перевернуло мой мир
             и позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -110,6 +124,7 @@
         <div class="plans__table">
           <header class="plans__table-header-group">
             <ul class="plans__table-row plans__table-row--header">
+              <li class="plans__table-cell plans__table-cell--empty"></li>
               <li class="plans__table-cell plans__table-cell--header">База<p class="plans__price">1,99 USD</p></li>
               <li class="plans__table-cell plans__table-cell--header">Стандарт<p class="plans__price">3,99 USD</p></li>
               <li class="plans__table-cell plans__table-cell--header">Анлим<p class="plans__price">9,99 USD</p></li>
@@ -117,20 +132,22 @@
           </header>
           <section class="plans__table-row-group">
             <ul class="plans__table-row">
-              <li class="plans__table-cell">Розовый фильтр</li>
-              <li class="plans__table-cell">Розовый фильтр</li>
-              <li class="plans__table-cell">Розовый фильтр</li>
-              <!--<li class="plans__table-cell"><span class="visually-hidden">Да</span></li>-->
+              <li class="plans__table-cell"><span class="plans__row-name plans__row-name--main">Розовый фильтр</span></li>
+              <li class="plans__table-cell"><span class="plans__row-name">Розовый фильтр</span><span class="visually-hidden">Есть</span></li>
+              <li class="plans__table-cell"><span class="plans__row-name">Розовый фильтр</span><span class="visually-hidden">Есть</span></li>
+              <li class="plans__table-cell"><span class="plans__row-name">Розовый фильтр</span><span class="visually-hidden">Есть</span></li>
             </ul>
             <ul class="plans__table-row">
-              <li class="plans__table-cell">Смайлики</li>
-              <li class="plans__table-cell">Смайлики</li>
-              <li class="plans__table-cell">Смайлики</li>
+              <li class="plans__table-cell"><span class="plans__row-name plans__row-name--main">Смайлики</span></li>
+              <li class="plans__table-cell"><span class="plans__row-name">Смайлики</span><span class="visually-hidden">Нет</span></li>
+              <li class="plans__table-cell"><span class="plans__row-name">Смайлики</span><span class="visually-hidden">Есть</span></li>
+              <li class="plans__table-cell"><span class="plans__row-name">Смайлики</span><span class="visually-hidden">Есть</span></li>
             </ul>
             <ul class="plans__table-row">
-              <li class="plans__table-cell">Комментарии</li>
-              <li class="plans__table-cell">Комментарии</li>
-              <li class="plans__table-cell">Комментарии</li>
+              <li class="plans__table-cell"><span class="plans__row-name plans__row-name--main">Комментарии</span></li>
+              <li class="plans__table-cell"><span class="plans__row-name">Комментарии</span><span class="visually-hidden">Нет</span></li>
+              <li class="plans__table-cell"><span class="plans__row-name">Комментарии</span><span class="visually-hidden">Нет</span></li>
+              <li class="plans__table-cell"><span class="plans__row-name">Комментарии</span><span class="visually-hidden">Есть</span></li>
             </ul>
           </section>
         </div>
@@ -154,7 +171,7 @@
           <p class="contacts__action">Звоните:</p>
           <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </li>
-        <li class="contacts__item">
+        <li class="contacts__item contacts__item--special-order">
           <p class="contacts__action">Пишите:</p>
           <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>

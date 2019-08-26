@@ -8,3 +8,18 @@
   width: 960px;
   margin: 0 auto;
 }
+
+.link-style () {
+  color: @pink;
+
+  &:hover,
+  &:focus {
+    color: @bg-light-blue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    text-decoration: none;
+    opacity: 0.3;
+  }
+}
