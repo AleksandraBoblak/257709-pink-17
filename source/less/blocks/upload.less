@@ -1,0 +1,162 @@
+.upload {
+  margin-bottom: 28px;
+}
+
+.upload__lead {
+  margin: 0 auto;
+  max-width: 260px;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+
+  margin-bottom: 42px;
+}
+
+.upload__form {
+  padding: 20px 0 30px 0;
+  background-color: @bg-grey;
+  text-align: center;
+}
+
+.upload__list {
+  //Временно
+  height: 162px;
+  border-bottom: 1px solid #dddfe0;
+}
+
+.upload__buttons {
+  padding-top: 38px;
+}
+
+.upload__button {
+  display: block;
+
+  .button-style();
+
+  margin-bottom: 12px;
+  width: 280px;
+
+  &--post {
+    border-color: @pink;
+    color: @pink;
+
+    &:hover,
+    &:focus {
+      background-color: @pink;
+      color: #ffffff;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--cancel {
+    border-color: @bg-light-blue;
+    color: @bg-light-blue;
+
+    opacity: 0.1;
+
+    &:hover,
+    &:focus {
+      opacity: 0.3;
+    }
+
+    &:active {
+      background-color: @bg-light-blue;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .upload {
+    margin-bottom: 0;
+  }
+
+  .upload__lead {
+    font-size: 18px;
+    max-width: 425px;
+    margin-bottom: 67px;
+  }
+
+  .upload__form {
+    padding: 57px 0 43px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .upload__link {
+    margin-right: 4px;
+  }
+
+  .upload__column {
+    margin-right: 14px;
+  }
+
+  .upload__list {
+    //Временно
+    height: 200px;
+  }
+
+  .upload__buttons {
+    padding-top: 66px;
+  }
+
+  .upload__button {
+    width: 260px;
+
+    &--post {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .upload {
+    margin-bottom: 29px;
+  }
+
+  .upload__form {
+    max-width: 940px;
+    margin: 0 auto;
+    padding-bottom: 56px;
+    justify-content: space-evenly;
+  }
+
+  .upload__link {
+    margin-right: 20px;
+  }
+
+  .upload__column {
+    flex-grow: 1;
+    max-width: 410px;
+
+    margin-right: -15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .upload__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .upload__button {
+    width: 183px;
+
+    &--post {
+      margin: 0;
+    }
+
+    &--cancel {
+      margin: 0;
+    }
+  }
+}

@@ -1,10 +1,11 @@
 .photos {
   color: #283645;
+  margin-bottom: 24px;
 }
 
 .photos__list {
   .list-reset();
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   &--table {
     padding: 4px 10px 10px 10px;
@@ -18,11 +19,15 @@
   font-size: 14px;
   line-height: 30px;
 
-  padding: 47px 38px;
+  padding: 47px 38px 49px;
   margin: 0;
 }
 
 @media (min-width: @tablet-width) {
+  .photos {
+    margin-bottom: 45px;
+  }
+
   .photos__lead {
     font-size: 18px;
     max-width: 550px;
@@ -42,9 +47,13 @@
 }
 
 @media (min-width: @desktop-width) {
+  .photos {
+    margin-bottom: 8px;
+  }
+
   .photos__lead {
     max-width: 640px;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     padding-top: 92px;
   }
 
