@@ -11,6 +11,10 @@
   margin-bottom: 18px;
 }
 
+.achievements__input {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .achievements__label {
     padding: 21px 0 13px 76px;
@@ -18,9 +22,13 @@
 }
 
 @media (min-width: @desktop-width) {
+  .achievements__column {
+    margin: 0;
+  }
+
   .achievements__label {
-    padding: 21px 0 10px 40px;
-    width: 265px;
+    padding: 21px 0 10px 56px;
+    margin-bottom: 22px;
     min-height: 40px;
     box-sizing: border-box;
     text-align: left;

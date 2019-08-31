@@ -52,18 +52,30 @@
     .container-desktop();
     box-sizing: border-box;
     padding: 50px 6px;
-  }
 
-  .page-footer__social {
-    margin-left: 17px;
-  }
+    &--competition {
+      padding: 0 6px;
+    }
 
-  .page-footer__logo:hover,
-  .page-footer__logo:focus {
-    filter: none;
-  }
+    .page-footer__social {
+      margin-left: 17px;
 
-  .page-footer__logo:active {
-    opacity: 1;
+      &--competition {
+        padding: 0;
+      }
+    }
+
+    .page-footer__logo--competition {
+      margin-top: -5px;
+    }
+
+    .page-footer__logo:hover,
+    .page-footer__logo:focus {
+      filter: none;
+    }
+
+    .page-footer__logo:active {
+      opacity: 1;
+    }
   }
 }
