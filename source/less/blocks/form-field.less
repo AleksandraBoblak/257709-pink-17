@@ -80,11 +80,24 @@
       align-items: unset;
       margin: 0;
     }
+
+    &--name {
+      padding: 0;
+    }
   }
 
   .form-field__wrapper {
     display: flex;
+
+    &--name {
+      flex-wrap: wrap;
+      flex-direction: column;
+      min-height: 311px;
+      align-items: stretch;
+      justify-content: space-between;
+    }
   }
+
 
   .form-field__input {
     flex-basis: 50%;
